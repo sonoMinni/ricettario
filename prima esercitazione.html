@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  	<title>Ricette di Minni</title>
+  	<style type="text/css">
+
+  	#RicettediMinni{
+  		text-align: center;
+  		font-family: cursive;
+  	}
+
+  	#menu,#antipasto,#primo,#secondo,#dolce{
+  		min-height: 100vh;
+  	}
+  	a{
+  		text-decoration: none;
+  	}
+  	img{
+  		max-width: 400px;
+  		width: 	100%;
+  	}
+    .hero {
+      min-height:  100vh;
+      background-image: url(data:image/jpeg;base64,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);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    html, body, h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    *{
+      margin: 0;
+    }
+  	</style>
+  </head>
+  <body>
+    <section id="primasezione" class="hero">
+      <h1 id="RicettediMinni">RICETTE DI MINNI</h1>
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arredamentimeneghello.it%2Fprodotto%2Fcucine-moderne%2Fcucina-moderna-meneghello-01%2F&psig=AOvVaw2NENzCdZofbPS8ud8T3a-u&ust=1634893789614000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJC2kJKU2_MCFQAAAAAdAAAAABAD" alt="">
+    </section>
+
+    <section class="collapse" id="menu">
+      <h2>MENÙ</h2>
+      <ol>
+        <li>
+          <p>Antipasto</p>
+          <a href="#antipasto">Guacamole</a>
+        </li>
+        <li>
+          <p>Primo</p>
+          <a href="#primo">Spaghetti alla Carbonara</a>
+        </li>
+        <li>
+          <p>Secondo</p>
+          <a href="#secondo">Parmigiana di Melanzane</a>
+        </li>
+        <li>
+          <p>Dolce</p>
+          <a href="#dolce">Tiramisù</a>
+        </li>
+    </section>
+
+    <section id="antipasto">
+      <img src="guacamole.jpg" alt="Foto Guacamole">
+      <h2>INGREDIENTI</h2>
+      <ol>
+        <li>Avocado (2) 500 g</li>
+        <li>Succo di lime 35 g</li>
+        <li>Pomodori ramati 1</li>
+        <li>Cipolle bianche (mezza) 35 g</li>
+        <li>Coriandolo q.b.</li>
+        <li>Sale fino 1 pizzico</li>
+      </ol>
+        <h2>Preparazione</h2>
+        Per preparare il guacamole, per prima cosa mondate e tritate finemente la cipolla 1, poi tritate anche il coriandolo 2. Dividete l’avocado a metà ed estraete il nocciolo 3.
+
+
+
+
+Prelevate la polpa con l’aiuto di un cucchiaio e versatela all’interno di un mortaio 4. Aggiungete il succo di lime 5 e cominciate a pestare fino ad ottenere una crema 6.
+
+
+
+
+Unite anche la cipolla tritata 7 e il coriandolo 8 e pestate ancora per amalgamare il tutto, poi aggiustate di sale 9. Se vi piace il piccante, a questo punto potete aggiungere del peperoncino fresco o qualche goccia di tabasco.
+
+
+
+
+In ultimo riducete il pomodoro a dadini 10 e aggiungetelo sulla salsa 11. La vostra salsa guacamole è pronta per essere servita 12!
+    </section>
+
+    <section id="primo">
+      <img src="carbonara.jpg" alt="Foto spaghetti alla carbonara">
+      <h2>INGREDIENTI</h2>
+      <ol>
+        <li>Spaghetti 320 g
+        </li>
+        <li>Guanciale 150 g
+        </li>
+        <li>Tuorli di uova medie 6
+        </li>
+        <li>Pecorino romano 50 g
+        </li>
+        <li>Pepe nero q.b.
+        </li>
+      </ol>
+      <h2>Preparazione</h2>
+      Per preparare gli spaghetti alla carbonara cominciate mettendo sul fuoco una pentola con l’acqua salata per cuocere la pasta. Nel frattempo eliminate la cotenna dal guanciale
+      1. e tagliatelo prima a fette e poi a striscioline spesse circa 1cm
+      2. La cotenna avanzata potrà essere riutilizzata per insaporire altre preparazioni. Versate i pezzetti in una padella antiaderente
+      3. e rosolate per circa 15 minuti a fiamma media, fate attenzione a non bruciarlo altrimenti rilascerà un aroma troppo forte. Nel frattempo tuffate gli spaghetti nell’acqua bollente
+      4. e cuoceteli per il tempo indicato sulla confezione. Intanto versate i tuorli in una ciotola
+      5. aggiungete anche la maggior parte del Pecorino previsto dalla ricetta
+      6. la parte restante servirà per guarnire la pasta.nsaporite con il pepe nero
+      7. amalgamate tutto con una frusta a mano
+      8. Aggiungete un cucchiaio di acqua di cottura per diluire il composto e mescolate
+      9. Intanto il guanciale sarà giunto a cottura, spegnete il fuoco e tenetelo da parte
+      10. Scolate la pasta al dente direttamente nel tegame con il guanciale
+      11. e saltatela brevemente per insaporirla. Togliete dal fuoco e versate il composto di uova e Pecorino
+      12. nel tegame. Mescolate velocemente per amalgamare.Per renderla ben cremosa, al bisogno, potete aggiungere poca acqua di cottura della pasta 13. Servite subito gli spaghetti alla carbonara insaporendoli con il Pecorino avanzato 14 e il pepe nero macinato a piacere 15.
+    </section>
+    <section id="secondo">
+      <img src="Parmigiana di melanzane.jpg" alt="Parmigiana di melanzane">
+      <h2>INGREDIENTI</h2>
+      <ol>
+        <li>Melanzane ovali nere 1,7 kg
+        </li>
+        <li>Fiordilatte 500 g
+        </li>
+        <li>Cipolle dorate 1
+        </li>
+        <li>Olio extravergine d'oliva q.b.
+        </li>
+        <li>Sale fino q.b.
+        </li>
+        <li>Passata di pomodoro 1 kg
+        </li>
+        <li>Parmigiano Reggiano DOP (da grattugiare) 150 g
+        </li>
+        <li>Basilico q.b.
+        </li>
+        <li>Pepe nero q.b.
+        </li>
+      </ol>
+      <p>Per preparare la parmigiana di melanzane cominciate dal sugo. Pulite e tritate la cipolla 1, versatela in un tegame dove avrete scaldato l'olio (che copra il fondo). 2. Lasciatela rosolare per un paio di minuti mescolando spesso per non farla bruciare, poi unite la passata di pomodoro 3.
+
+
+Regolate di sale e versate le foglie di basilico 5, sciacquate il recipiente con poca acqua e versatela in pentola quindi lasciate cuocere a fuoco dolce per 45-50 minuti 5. Nel frattempo tagliate a cubetti il fiordilatte tenendone da parte un pezzo che servirà alla fine 6.
+
+
+Mettete a scolare i cubetti in uno scolapasta messo in una ciotola 7, coprite con pellicola e mettete da parte: questo procedimento serve a far colare il siero in eccesso 8. A questo punto passate alle melanzane, pulitele e spuntatele 9.
+
+
+
+
+Affettate per il senso della lunghezza ottenendo delle fette spesse di 4-5 mm 10. Quando avrete finito friggete le melanzane in olio già caldo 170° immergendo pochi pezzi alla volta 11, non appena saranno leggermente dorate scolate su vassoio con carta assorbente 12.
+
+
+Quando sul vassoio sarà finito lo spazio mettete altra carta assorbente 13 e mettete a scolare le altre melanzane fritte 14. In ultimo passate alla composizione, iniziate versando un po’ di sugo in una pirofila da 20x30 cm 15.
+
+
+Formate il primo strato disponendo le fette di melanzane 16, versate il sugo di pomodoro 17, spalmatelo e distribuite dei cubetti di fiordilatte 18.
+
+
+Spolverizzate con il Parmigiano grattugiato 19 e delle foglie di basilico 20. Ricominciate aggiungendo il sugo di pomodoro 21 e le melanzane, che andranno adagiate in senso contrario.
+
+
+E poi ancora i formaggi 22 e le foglie di basilico. Andate avanti così fino ad arrivare all'ultimo strato di melanzane 23 e che andrete a condire, ancora una volta, con sugo e il fiordilatte che avete tenuto da parte, da spezzettare a mano 24.
+
+
+Finite con il Parmigiano grattugiato 25 e infornate in forno statico, già caldo a 200°, per circa 30 minuti 26. Trascorso il tempo di cottura lasciate riposare per 15-20 minuti prima di servire la vostra parmigiana di melanzane 27.</p>
+    </section>
+    <section id="dolce">
+      <img src="tiramisu.jpg" alt="Tiramisù">
+      <h2>INGREDIENTI</h2>
+      <ol>
+        <li>Savoiardi 300 g
+        </li>
+        <li>Mascarpone 500 g
+        </li>
+        <li>Caffè della moka già pronto (e zuccherato a piacere) 300 g
+        </li>
+        <li>Uova freschissime (circa 4 medie) 220 g
+        </li>
+        <li>Zucchero 100 g
+        </li>
+        <li>Cacao amaro in polvere per la superficie q.b.
+        </li>
+      </ol>
+      <h2>Preparazione</h2>
+      <p>Per preparare il tiramisù cominciate dalle uova (freschissime): quindi separate accuratamente gli albumi dai tuorli 1, ricordando che per montare bene gli albumi non dovranno presentare alcuna traccia di tuorlo. Poi montate i tuorli con le fruste elettriche, versando solo metà dose di zucchero 2. Non appena il composto sarà diventato chiaro e spumoso 3,
+
+Come fare Tiramisù
+e con le fruste ancora in funzione, potrete aggiungere il mascarpone, poco alla volta 4. Incorporato tutto il formaggio avrete ottenuto una crema densa e compatta; tenetela da parte 5. Pulite molto bene le fruste e passate a montare gli albumi versando il restante zucchero un po’ alla volta 6.
+
+Ricetta Tiramisù
+Dovrete montarli a neve ben ferma 7; otterrete questo risultato quando rovesciando la ciotola la massa non si muoverà. Prendete una cucchiaiata di albumi e versatela nella ciotola con i tuorli e lo zucchero e mescolate energicamente con una spatola, così stempererete il composto 8. Dopodiché procedete ad aggiungere la restante parte di albumi, poco alla alla volta mescolando molto delicatamente dal basso verso l'alto 9.
+
+Come preparare Tiramisù
+Una volta pronto, distribuite una generosa cucchiaiata di crema sul fondo di una pirofila da 30x20cm e distribuite per bene 11. Poi inzuppate per pochi istanti i savoiardi nel caffè freddo già zuccherato a vostro piacimento (noi abbiamo aggiunto solo 1 cucchiaino di zucchero) 12,
+
+Tiramisù ricetta
+prima da un lato e poi dall’altro 13. Man mano distribuite i savoiardi imbevuti sulla crema, tutti in un verso, così da ottenere un primo strato 14 sul quale andrete a distribuire una parte della crema al mascarpone 15.
+
+Come cucinare Tiramisù
+Anche in questo caso dovrete livellarla accuratamente così da avere una superficie liscia 16. E continuate a distribuire i savoiardi imbevuti nel caffè 17, poi realizzate un altro strato di crema 18.
+
+Come accompagnare Tiramisù
+Livellate la superficie 19 e spolverizzatela con del cacao amaro in polvere e lasciate rassodare in frigorifero per un paio d’ore 20. Il vostro tiramisù è pronto per essere gustato 21
+      </p>
+    </section>
+  </body>
+</html>
